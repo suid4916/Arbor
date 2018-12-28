@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/re_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#70ffffff"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backkey"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/backbt" />
+
+        <EditText
+            android:id="@+id/secondsearch"
+            android:layout_width="208dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#00ffffff"
+            android:focusable="false"
+            android:hint="검색어를 입력하세요."
+            android:padding="10sp"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/mystatussaver"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:background="@drawable/searchbt" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/gridView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:verticalSpacing="0sp" >
+    </GridView>
+
+</LinearLayout>

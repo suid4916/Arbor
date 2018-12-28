@@ -1,0 +1,118 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/re_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.5"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/home"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.5"
+                android:gravity="center|bottom"
+                android:text="식물을 키운지"
+                android:textColor="#7bab75" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/countday"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|right"
+                    android:text="0"
+                    android:textColor="#7bab75"
+                    android:textSize="100sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:gravity="center|left"
+                    android:text="일째"
+                    android:textColor="#7bab75" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_margin="15sp"
+            android:background="@drawable/homebtone"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/diary"
+            android:layout_width="wrap_content"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_margin="15sp"
+            android:background="@drawable/homebttwo"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+
+        <Button
+            android:id="@+id/plantbook"
+            android:layout_width="wrap_content"
+            android:layout_height="45sp"
+            android:layout_gravity="center"
+            android:layout_margin="15sp"
+            android:background="@drawable/homebtthree"
+            android:textColor="#ffffff"
+            android:textSize="25sp" />
+    </LinearLayout>
+
+</LinearLayout>
